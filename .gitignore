@@ -1,0 +1,17 @@
+# macOS metadata
+.DS_Store
+
+# Microsoft Office temporary files and presentations
+~$*
+*.ppt
+*.pptx
+
+# Video files
+*.avi
+*.flv
+*.m4v
+*.mkv
+*.mov
+*.mp4
+*.webm
+*.wmv
