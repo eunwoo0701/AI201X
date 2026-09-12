@@ -11,9 +11,9 @@ The Titanic project compares several classification approaches in KNIME,
 including K-nearest neighbors, logistic regression, random forest, and support
 vector machines.
 
-- `Team_Project1/Titanic_Survival_KNIME.knwf`: KNIME workflow
-- `Team_Project1/KNIME workflow .png`: workflow overview
-- `Team_Project1/kaggle_submission.png`: Kaggle submission result
+- `Team-Project1/Titanic_Survival_KNIME.knwf`: KNIME workflow
+- `Team-Project1/KNIME-workflow.png`: workflow overview
+- `Team-Project1/kaggle_submission.png`: Kaggle submission result
 - `TITANIC_submission.csv`: prediction file for Kaggle (417 passengers)
 
 ### 2. House price regression
@@ -33,7 +33,7 @@ total bathrooms.
 - `Team-Project2/KNIME Workflow for House Price Regressions.knwf`: KNIME workflow
 - `Team-Project2/KNIME WORKFLOW.pdf`: project presentation and results
 - `Team-Project2/impact of feature engineering.pdf`: before/after comparison
-- `Team-Project2/subimission.csv`: Kaggle prediction file (1,459 houses)
+- `Team-Project2/submission.csv`: Kaggle prediction file (1,459 houses)
 
 ### 3. Telco churn and customer feedback
 
@@ -70,3 +70,16 @@ ask to install missing extensions when the workflow is opened.
   training/test datasets are not included unless explicitly listed above.
 - Model metrics are transcribed from the included project reports and may differ
   if the workflows are rerun with different data splits or settings.
+
+## Reproducibility
+
+The KNIME workflows are the executable source for the Titanic and house-price
+projects. Before running them, inspect each File Reader node and replace any
+machine-specific path with the location of your local Kaggle dataset. Keep the
+same train/test split and random seed recorded in the workflow when comparing
+results with the metrics above.
+
+The final telco-churn directory currently contains prepared data and a serialized
+model, but not the original training script. Treat it as a results archive rather
+than a fully reproducible experiment. Do not load the pickle from an untrusted
+copy of the repository.
